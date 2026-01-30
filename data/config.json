@@ -1,0 +1,101 @@
+{
+  "unlockTime": "22:00",
+  "reminderTime": "09:00",
+  "accessCode": "123456",
+  "telegram": {
+    "botToken": "8218830829:AAGBBTiWETxvCw353aXGClXCS8HWsVSxK5M",
+    "chatId": "7019234049"
+  },
+  "days": [
+    {
+      "date": "2026-01-30",
+      "title": "Rose Day 🌹",
+      "title1": "Happy Rose Day, Shemdu! 🌹",
+      "title2": "Just for You 😘",
+      "message": "On this Rose Day, I want to say you are very special to me. Like a rose makes everything beautiful, you make my life happy. This rose is a small sign of my love and care for you. 💖",
+      "title3": "Memories",
+      "image": "assets/images/rose.jpg",
+      "music": "assets/music/rose_day.mp3",
+      "video": "assets/video/scooty.mp4",
+      "autoUnlock": true,
+      "manualUnlock": true
+    },
+    {
+      "date": "2026-02-08",
+      "title": "Propose Day 💍",
+      "title1": "Happy Propose Day, Shemdi! 💍",
+      "title2": "Mine Forever 💕",
+      "message": "On this Propose Day, I want to tell you what my heart feels. You are very special to me, and I want you in my life always. Will you be mine and walk with me forever? 💖 ",
+      "image": "assets/images/propose.jpg",
+      "music": "assets/music/propose_day.mp3",
+      "autoUnlock": true,
+      "manualUnlock": true
+    },
+    {
+      "date": "2026-02-09",
+      "title": "Chocolate Day 🍫",
+      "title1": "Happy Chocolate Day, Kali! 🍫",
+      "title2": "Mine Forever 💕",
+      "message": "On this Chocolate Day, I want to make your day a little sweet. Just like chocolate, your smile makes my life happy. This chocolate is a small sign of my love for you. 💖",
+      "image": "assets/images/chocolate.jpg",
+      "music": "assets/music/chocolate_day.mp3",
+      "autoUnlock": true,
+      "manualUnlock": true
+    },
+    {
+      "date": "2026-02-10",
+      "title": "Teddy Day 🧸",
+      "title1": "Happy Teddy Day, Shemdi! 🧸",
+      "title2": "Hug Me Tight 🤗",
+      "message": "On this Teddy Day, I feel you like a soft teddy hugs. Teddy gives comfort, your presence makes me feel safe and happy. This teddy is a small sign of my care and love for you. 💖",
+      "image": "assets/images/teddy.jpg",
+      "music": "assets/music/teddy_day.mp3",
+      "autoUnlock": true,
+      "manualUnlock": true
+    },
+    {
+      "date": "2026-02-11",
+      "title": "Promise Day 🤞",
+      "title1": "Happy Promise Day, Shemdu! 🤞",
+      "title2": "Always With You 💖",
+      "message": "On this Promise Day, I promise to always care for you and respect you. I will stand by you in every happy and hard time. This promise comes from my heart, just for you. 💖",
+      "image": "assets/images/promise.jpg",
+      "music": "assets/music/promise_day.mp3",
+      "autoUnlock": true,
+      "manualUnlock": true
+    },
+    {
+      "date": "2026-02-12",
+      "title": "Hug Day 🤗",
+      "title1": "Happy Hug Day, Kali! 🤗",
+      "title2": "Feel My Heart 💓",
+      "message": "On this Hug Day, I want to send you a warm hug. May this hug make you feel loved, safe, and happy.I am always here for you, with love in my heart. 💖",
+      "image": "assets/images/hug.jpg",
+      "music": "assets/music/hug_day.mp3",
+      "autoUnlock": true,
+      "manualUnlock": true
+    },
+    {
+      "date": "2026-02-13",
+      "title": "Kiss Day 💋",
+      "title1": "Happy Kiss Day, Shemdi! 💋",
+      "title2": "Love You 😘",
+      "message": "On this Kiss Day, I want to send you a sweet kiss. A kiss to show how much I care and love you. May it make you feel special and close to my heart. 💖",
+      "image": "assets/images/kiss.jpg",
+      "music": "assets/music/kiss_day.mp3",
+      "autoUnlock": true,
+      "manualUnlock": true
+    },
+    {
+      "date": "2026-02-14",
+      "title": "Valentines Day ❤️",
+      "title1": "Happy Valentine's Day, Nannu! ❤️",
+      "title2": "My Priority Person 💑",
+      "message": "Happy Valentines Day! You make my life happier and more beautiful every day.I am grateful to have you in my life, and I love you from my heart. 💖",
+      "image": "assets/images/valentine.jpg",
+      "music": "assets/music/valentine_day.mp3",
+      "autoUnlock": true,
+      "manualUnlock": true
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+/* Body + general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 400% 400%;
+  animation: bgAnimation 5s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+h1 {
+  margin-top: 40px;
+  color: rgb(98, 6, 17);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+h5 {
+  margin-top: 40px;
+  margin-bottom: -16px;
+  color: rgb(194, 70, 85);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+h3 {
+  margin-top: 75px;
+  color: rgb(252, 146, 6);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 33px;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+h6 {
+  margin-top: 2px;
+  margin-bottom: 20px;
+  color: rgb(1, 1, 1);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+h2{
+    color: rgb(194, 70, 85);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 35px;
+    margin-top: 200px;
+}
+
+p {
+  color: rgb(45, 29, 44);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+
+
+/* Access code box */
+.access-box {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  background: linear-gradient(
+      to bottom right,
+      rgba(255, 182, 193, 0.2),
+      rgba(255, 105, 180, 0.2)
+    ),
+    url("https://i.pinimg.com/736x/10/3f/02/103f0244bc2601ae506516ebca63995d.jpg")
+      center/cover;
+  border-radius: 15px;
+  text-align: center;
+  height: 500px;
+  padding: 10px;
+  width: 350px;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+input {
+  padding: 15px;
+  width: 200px;
+  margin-top: 10px;
+  border: 2px solid rgb(227, 103, 200);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 8px 20px;
+  color: white;
+  border: 4px solid rgb(227, 103, 200);
+  border-radius: 50px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#accessCode{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid rgb(227, 103, 200);
+    border-radius: 10px;
+    width: 70%;
+
+}
+
+#errorMsg {
+  color: red;
+  margin-top: 10px;
+  height: 20px;
+  font-weight: bold;
+}
+
+.love-note {
+  margin-top: 15px;
+  color: #8f245d;
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.9;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Dashboard cards */
+#cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 8fr));
+  gap: 25px;
+  padding: 50px;
+  width: 80%;
+  margin-top: 75px;
+}
+
+.install-btn {
+  background: #dd0b741b;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  border: 3px solid rgb(227, 103, 200);
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 22px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: auto;
+  height: 30px;
+  width: 65px;
+}
+.install-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -42px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.install-btn:hover {
+  transform: scale(1.05);
+}
+
+.day-card {
+  background: linear-gradient(
+      to bottom right,
+      rgba(255, 182, 193, 0.382),
+      rgba(255, 105, 180, 0.383)
+    ),
+    url("https://i.pinimg.com/736x/42/89/c1/4289c11f4a91f5ee05b39e1359e35385.jpg")
+      center/cover;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.1s;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 35px;
+}
+
+.day-card:hover {
+  transform: scale(1.05);
+}
+
+/* Romantic Card */
+.romantic-card {
+  background: linear-gradient(
+      to bottom right,
+      rgba(255, 182, 193, 0.049),
+      rgba(255, 105, 180, 0.45)
+    ),
+    url("https://i.pinimg.com/736x/99/ed/d5/99edd5559a371c90b19057a9b85fc750.jpg")
+      center/cover;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.card-image {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 20px 0;
+  align-items: center;
+}
+.card-video {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+#closeBtn {
+  padding: 10px 20px;
+  color: white;
+  border: 4px solid rgb(227, 103, 200);
+  background: transparent;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.romantic-header {
+    text-align: center;
+    padding: 15px 10px;
+    background: rgba(255, 182, 193, 0.144);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(255, 105, 180, 0.3);
+    border-bottom: 1.5px solid rgba(255, 105, 180, 0.3);
+}
+
+.romantic-header h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.romantic-header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.romantic-footer {
+    text-align: center;
+    padding: 15px 10px;
+    background: rgba(255, 182, 193, 0.2);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(255, 105, 180, 0.3);
+}
+
+.romantic-footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.romantic-footer small {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+/* FadeIn Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .day-card {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .romantic-card {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  input,
+  button {
+    width: 90%;
+    font-size: 16px;
+  }
+  .card-image {
+    max-width: 100%;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+/* Floating Hearts Animation */
+.floating-hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.floating-hearts .heart {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0;
+  animation: floatHeart 6s ease-in infinite;
+}
+
+.floating-hearts .heart:nth-child(1) {
+  left: 10%;
+  animation-delay: 4s;
+}
+.floating-hearts .heart:nth-child(2) {
+  left: 30%;
+  animation-delay: 6s;
+}
+.floating-hearts .heart:nth-child(3) {
+  left: 50%;
+  animation-delay: 8s;
+}
+.floating-hearts .heart:nth-child(4) {
+  left: 70%;
+  animation-delay: 10s;
+}
+.floating-hearts .heart:nth-child(5) {
+  left: 90%;
+  animation-delay: 12s;
+}
+
+@keyframes floatHeart {
+  0% {
+    bottom: -10%;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    bottom: 110%;
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+

@@ -1,0 +1,19 @@
+name: Reminder Notification
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # Every day at 09:00 AM UTC (adjust as needed)
+    
+jobs:
+  send_reminder:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: pip install requests
+    - name: Run Telegram Bot
+      run: python telegram/bot.py

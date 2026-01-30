@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Days</title>
+    <link rel="icon" href="assets/images/heart.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <header class="romantic-header">
+      <div>
+        <h1>Love Countdown 💖</h1>
+        <p>Every Day Unlocks a New Feeling</p>
+        <div class="install-container">
+          <button id="installBtn" style="display: flex" class="install-btn">
+            Install
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="floating-hearts">
+      <span class="heart">❤️</span>
+      <span class="heart">💖</span>
+      <span class="heart">💕</span>
+      <span class="heart">💘</span>
+      <span class="heart">💝</span>
+    </div>
+    <!-- <h5>SPECIAL DAYS</h5> -->
+    <div id="cardsContainer"></div>
+    <footer class="romantic-footer">
+      <p>Made with 💖 for Someone Special</p>
+      <small>© 2026 Love Countdown</small>
+    </footer>
+
+    <script src="js/unlock.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/pwa.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then(() => console.log("SW registered"));
+      }
+    </script>
+  </body>
+</html>
