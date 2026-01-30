@@ -1,10 +1,10 @@
 {
-  "unlockTime": "22:00",
+  "unlockTime": "22:45",
   "reminderTime": "09:00",
   "accessCode": "123456",
   "telegram": {
     "botToken": "8218830829:AAGBBTiWETxvCw353aXGClXCS8HWsVSxK5M",
-    "chatId": "7019234049"
+    "chatId": "1147519186"
   },
   "days": [
     {
