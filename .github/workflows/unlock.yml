@@ -1,15 +1,25 @@
-name: Unlock Notification
+name: Valentine Unlock Bot 💖
+
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "55 17 * * *"  # 11:25 PM IST
+    - cron: "58 17 * * *"    # 11:28 AM IST
+  workflow_dispatch:
+
 jobs:
-  notify:
+  run-bot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-      - run: pip install requests
-      - run: python telegram/bot.py
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Telegram Bot
+        run: python telegram/bot.py
