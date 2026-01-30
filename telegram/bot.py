@@ -32,5 +32,5 @@ for day in config["days"]:
     print("Checking Day:", day["date"], day["title"])
 
     if day["date"] == today and day["autoUnlock"]:
-        msg = f"Hey Nannu!👩‍❤️‍👨 <b>{day['title']}</b>\n\nSomething special is waiting just for you 💝\nYour Unlock Card is ready, only for my queen 👑\n\n🔗 Link: https://yourlinkhere.com\n🔐Access Code: SHEMDI\n\nOpen it and see how much you mean to me 🥰\nAlways yours, forever and ever 💕"
+        msg = f"Hey Nannu!👩‍❤️‍👨 <b>{day['title']}</b>\n\nSomething special is waiting just for you 💝\nYour Unlock Card is ready, only for my queen 👑\n\n🔗 Link: https://mahavirharijan.github.io/Coundown-Day-s/\n🔐Access Code: SHEMDI\n\nOpen it and see how much you mean to me 🥰\nAlways yours, forever and ever 💕"
         send_msg(msg)
