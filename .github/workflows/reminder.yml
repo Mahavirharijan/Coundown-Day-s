@@ -2,7 +2,7 @@ name: Reminder Notification
 
 on:
   schedule:
-    - cron: "58 17 * * *"   # Every day at 11:28 PM UTC (adjust as needed)
+    - cron: "12 19 * * *"   # Every day at 11:28 PM UTC (adjust as needed)
     
 jobs:
   send_reminder:
