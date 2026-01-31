@@ -3,8 +3,8 @@ name: Reminder Notification
 
 on:
   schedule:
-    # 01:32 AM IST daily
-    - cron: "32 19 * * *"
+    # 09:05 AM IST daily
+    - cron: "35 03 * * *"
   workflow_dispatch:
 
 jobs:
