@@ -1,8 +1,10 @@
+# reminder.yml
 name: Reminder Notification
 
 on:
   schedule:
-    - cron: "33 18 * * *"   # 12:03 AM IST
+  - cron: "37 19 * * *"  # 01:07 AM IST
+  workflow_dispatch:
     
 jobs:
   send_reminder:
@@ -15,5 +17,5 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies
       run: pip install requests
-    - name: Run Telegram Bot
-      run: python telegram/bot.py
+    - name: Run Telegram Bot (Reminder)
+      run: python telegram/bot.py reminder

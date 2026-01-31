@@ -1,8 +1,9 @@
+# unlock.yml
 name: Valentine Unlock Bot 💖
 
 on:
-  schedule:
-    - cron: "31 18 * * *"   # 12:01 AM IST
+  sschedule:
+  - cron: "35 19 * * *"   # 01:05 AM IST
   workflow_dispatch:
 
 jobs:
@@ -20,5 +21,5 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run Telegram Bot
-        run: python telegram/bot.py
+      - name: Run Telegram Bot (Unlock)
+        run: python telegram/bot.py unlock
