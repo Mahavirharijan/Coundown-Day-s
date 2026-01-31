@@ -2,7 +2,7 @@ name: Valentine Unlock Bot 💖
 
 on:
   schedule:
-    - cron: "40 19 * * *"  # 01:10 AM IST
+    - cron: "31 18 * * *"   # 12:01 AM IST
   workflow_dispatch:
 
 jobs:

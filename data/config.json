@@ -1,6 +1,6 @@
 {
-  "unlockTime": "01:10",
-  "reminderTime": "01:12",
+  "unlockTime": "12:01",
+  "reminderTime": "12:03",
   "accessCode": "123456",
   "telegram": {
     "botToken": "8218830829:AAGBBTiWETxvCw353aXGClXCS8HWsVSxK5M",
@@ -8,7 +8,7 @@
   },
   "days": [
     {
-      "date": "2026-01-31",
+      "date": "2026-02-01",
       "title": "Rose Day 🌹",
       "title1": "Happy Rose Day, Shemdu! 🌹",
       "title2": "Just for You 😘",
