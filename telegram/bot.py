@@ -31,9 +31,10 @@ for day in config["days"]:
         if mode == "unlock":
             msg = (
                 f"💖 <b>{day['title']}</b>\n\n"
-                f"{day['message']}\n\n"
+                f"Something special is waiting just for you 💝\n"
+                f"Your Unlock Card is ready, only for my queen 👑\n\n"
                 f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/\n"
-                f"🔐 Access Code: <b>{config['SHEMDI']}</b>"
+                f"🔐 Access Code: <b>{config['accessCode']}</b>"
             )
             send_msg(msg)
             break
@@ -43,7 +44,7 @@ for day in config["days"]:
             msg = (
                 f"⏰ Reminder!\n\n"
                 f"Today's card <b>{day['title']}</b> is waiting 💕\n"
-                f"Open it now 👇\n"
+                f"Open it now 👇\n\n"
                 f"https://mahavirharijan.github.io/Coundown-Day-s/"
             )
             send_msg(msg)
