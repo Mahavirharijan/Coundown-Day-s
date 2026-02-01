@@ -4,7 +4,7 @@ name: Reminder Notification
 on:
   schedule:
     # 06:40 PM IST daily
-    - cron: '40 18 * * *'
+    - cron: '0 0/6 * 1/1 * ? *'
   workflow_dispatch:
 
 jobs:
