@@ -10,6 +10,7 @@ with open("data/config.json", encoding="utf-8") as f:
 
 bot_token = config["telegram"]["botToken"]
 chat_id = config["telegram"]["chatId"]
+chat_id2 = config["telegram"]["chatId2"]
 
 # IST time
 now_utc = datetime.utcnow()
@@ -20,6 +21,11 @@ def send_msg(msg):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     requests.post(url, data={
         "chat_id": chat_id,
+        "text": msg,
+        "parse_mode": "HTML"
+    })
+    requests.post(url, data={
+        "chat_id": chat_id2,
         "text": msg,
         "parse_mode": "HTML"
     })
