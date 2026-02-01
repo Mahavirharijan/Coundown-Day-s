@@ -2,7 +2,7 @@
   "name": "Love Countdown 💖",
   "short_name": "Love 💕",
   "description": "Every day unlocks a new feeling",
-  "start_url": "/dashboard.html",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffd6e8",
   "theme_color": "#ff2f92",
