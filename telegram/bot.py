@@ -45,7 +45,7 @@ for day in config["days"]:
                 f"⏰ Reminder!\n\n"
                 f"Today's card <b>{day['title']}</b> is waiting 💕\n"
                 f"Open it now 👇\n\n"
-                f"https://mahavirharijan.github.io/Coundown-Day-s/"
+                f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/"
             )
             send_msg(msg)
             break

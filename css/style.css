@@ -141,7 +141,7 @@ button {
   margin-top: 75px;
 }
 
-#installBtn {
+.install-btn {
   background: #dd0b741b;
   font-family:Georgia, 'Times New Roman', Times, serif;
   color: white;
@@ -168,7 +168,7 @@ button {
   text-align: justify;
 }
 
-#installBtn:hover {
+.install-btn:hover {
   transform: scale(1.05);
 }
 
