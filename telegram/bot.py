@@ -30,7 +30,7 @@ for day in config["days"]:
         # 🔓 MAIN UNLOCK MESSAGE
         if mode == "unlock":
             msg = (
-                f"💖 <b>{day['title']}</b>\n\n"
+                f"<b>{day['title']}</b>\n\n"
                 f"Something special is waiting just for you 💝\n"
                 f"Your Unlock Card is ready, only for my queen 👑\n\n"
                 f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/\n"
