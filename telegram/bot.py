@@ -52,7 +52,7 @@ def send_msg(msg, debug=False):
         print(f"Error sending message: {e}")
 
 # Send a debug message on startup (optional, for testing)
-# send_msg(f"Bot started. Mode: {mode}, Today: {today}", debug=True)
+send_msg(f"Bot started. Mode: {mode}, Today: {today}", debug=True)
 
 # Process days
 found_day = False
