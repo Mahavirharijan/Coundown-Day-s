@@ -1,22 +1,25 @@
-# reminder.yml
-name: Reminder Notification
+name: Valentine Unlock Bot 💖
 
 on:
   schedule:
-    # 09:00 AM IST daily
-    - cron: '0 9 * * *'
+    # 10:20 AM IST = 4:50 AM UTC
+    - cron: "50 4 * * *"
   workflow_dispatch:
 
 jobs:
-  send_reminder:
+  run-bot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.12"
+
       - name: Install dependencies
         run: pip install requests
-      - name: Run Telegram Bot (Reminder)
-        run: python telegram/bot.py reminder
+
+      - name: Run Telegram Bot (Unlock)
+        run: python telegram/bot.py unlock
