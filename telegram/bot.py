@@ -52,14 +52,14 @@ def send_msg(msg, debug=False):
         print(f"Error sending message: {e}")
 
 # Send a debug message on startup (optional, for testing)
-send_msg(f"Bot started. Mode: {mode}, Today: {today}", debug=True)
+# send_msg(f"Bot started. Mode: {mode}, Today: {today}", debug=True)
 
 # Process days
 found_day = False
 for day in config["days"]:
     if day["date"] == today and day.get("autoUnlock", False):
         found_day = True
-        # print(f"Debug: Processing day {day['date']} - {day['title']}")
+        print(f"Debug: Processing day {day['date']} - {day['title']}")
         
         # 🔓 MAIN UNLOCK MESSAGE
         if mode == "unlock":
