@@ -297,6 +297,36 @@ button {
     opacity: 1;
   }
 }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 @keyframes bgAnimation {
     0% {
@@ -309,6 +339,18 @@ button {
         background-position: 0% 50%;
     }
 }
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -375,21 +417,21 @@ button {
 }
 
 @keyframes floatHeart {
-  0% {
-    bottom: -10%;
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  20% {
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    bottom: 110%;
-    opacity: 0;
-    transform: scale(1.2);
-  }
+    0% {
+        bottom: -10%;
+        opacity: 0;
+        transform: translateX(0) rotate(0deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 110%;
+        opacity: 0;
+        transform: translateX(50px) rotate(360deg);
+    }
 }
 
