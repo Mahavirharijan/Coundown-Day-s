@@ -2,10 +2,10 @@ name: Valentine Bot 💖
 
 on:
   schedule:
-    # 22:00 IST = 16:30 UTC
-    - cron: "30 16 * * *"
-    # 22:10 IST = 16:40 UTC
-    - cron: "40 16 * * *"
+    # 00:00 IST = 18:30 UTC
+    - cron: "30 13 * * *"
+    # 09:00 IST = 03:30 UTC
+    - cron: "30 03 * * *"
   workflow_dispatch:
     inputs:
       mode:

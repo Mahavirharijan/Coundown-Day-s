@@ -1,6 +1,6 @@
 {
-  "unlockTime": "22:00",
-  "reminderTime": "22:10",
+  "unlockTime": "00:00",
+  "reminderTime": "09:00",
   "accessCode": "123456",
   "telegram": {
     "botToken": "8218830829:AAGBBTiWETxvCw353aXGClXCS8HWsVSxK5M",
@@ -9,7 +9,7 @@
   },
   "days": [
     {
-      "date": "2026-02-03",
+      "date": "2026-02-02",
       "title": "Rose Day 🌹",
       "title1": "Happy Rose Day, Shemdu! 🌹",
       "title2": "Just for You 😘",
@@ -22,7 +22,7 @@
       "manualUnlock": true
     },
     {
-      "date": "2026-02-08",
+      "date": "2026-02-03",
       "title": "Propose Day 💍",
       "title1": "Happy Propose Day, Shemdi! 💍",
       "title2": "Mine Forever 💕",
