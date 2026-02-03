@@ -1,21 +1,21 @@
 const CACHE_NAME = 'love-countdown-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/dashboard.html',
-  '/css/style.css',
-  '/js/auth.js',
-  '/js/card.js',
-  '/js/pwa.js',
-  '/js/sw.js',
-  '/js/unlock.js',
-  '/data/manifest.json',
-  '/assets/images/heart.png',
-  '/assets/images/icon-192.png',
-  '/assets/images/icon-512.png',
-  '/assets/images/rose.jpg',
-  '/assets/music/rose_day.mp3',
-  '/assets/video/scooty.mp4'
+  '/Coundown-Day-s/',
+  '/Coundown-Day-s/index.html',
+  '/Coundown-Day-s/dashboard.html',
+  '/Coundown-Day-s/css/style.css',
+  '/Coundown-Day-s/js/auth.js',
+  '/Coundown-Day-s/js/card.js',
+  '/Coundown-Day-s/js/pwa.js',
+  '/Coundown-Day-s/js/sw.js',
+  '/Coundown-Day-s/js/unlock.js',
+  '/Coundown-Day-s/data/manifest.json',
+  '/Coundown-Day-s/assets/images/heart.png',
+  '/Coundown-Day-s/assets/images/icon-192.png',
+  '/Coundown-Day-s/assets/images/icon-512.png',
+  '/Coundown-Day-s/assets/images/rose.jpg',
+  '/Coundown-Day-s/assets/music/rose_day.mp3',
+  '/Coundown-Day-s/assets/video/scooty.mp4'
 ];
 
 self.addEventListener('install', (event) => {
