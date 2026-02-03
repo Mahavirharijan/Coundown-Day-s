@@ -30,7 +30,7 @@
       "title3": "Memories",
       "image": "assets/images/propose.jpg",
       "music": "assets/music/propose_day.mp3",
-      "video": "assets/video/scooty.mp4",
+      "video": "assets/video/propose.mp4",
       "autoUnlock": true,
       "manualUnlock": true
     },
@@ -82,7 +82,7 @@
       "title3": "Memories",
       "image": "assets/images/hug.jpg",
       "music": "assets/music/hug_day.mp3",
-      "video": "assets/video/scooty.mp4",
+      "video": "assets/video/hug.mp4",
       "autoUnlock": true,
       "manualUnlock": true
     },
