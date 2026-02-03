@@ -11,12 +11,6 @@ const urlsToCache = [
   '/Coundown-Day-s/js/unlock.js',
   '/Coundown-Day-s/data/manifest.json',
   '/Coundown-Day-s/data/config.json'
-  // '/Coundown-Day-s/assets/images/heart.png',
-  // '/Coundown-Day-s/assets/images/icon-192.png',
-  // '/Coundown-Day-s/assets/images/icon-512.png',
-  // '/Coundown-Day-s/assets/images/rose.jpg',
-  // '/Coundown-Day-s/assets/music/rose_day.mp3',
-  // '/Coundown-Day-s/assets/video/scooty.mp4'
 ];
 
 self.addEventListener('install', (event) => {
