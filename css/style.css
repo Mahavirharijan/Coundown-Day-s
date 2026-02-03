@@ -299,6 +299,10 @@ button {
     font-size: 11px;
     opacity: 0.8;
 }
+.footerContent{
+    opacity: 0.8;
+    color: #8f245d;
+}
 
 /* FadeIn Animation */
 @keyframes fadeIn {
