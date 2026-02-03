@@ -1,14 +1,26 @@
-name: Valentine Unlock Bot 💖
+name: Valentine Bot 💖
 
 on:
   schedule:
-    # 09:00 AM IST = 03:30 AM UTC
-    - cron: "30 03 * * *"
+    # 22:00 IST = 16:30 UTC
+    - cron: "30 16 * * *"
+    # 22:10 IST = 16:40 UTC
+    - cron: "40 16 * * *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Select mode: unlock or reminder'
+        required: true
+        default: 'unlock'
+        type: choice
+        options:
+        - unlock
+        - reminder
 
 jobs:
-  run-bot:
+  unlock-bot:
     runs-on: ubuntu-latest
+    if: github.event.schedule == '30 16 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'unlock')
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -23,3 +35,21 @@ jobs:
 
       - name: Run Telegram Bot (Unlock)
         run: python telegram/bot.py unlock
+
+  reminder-bot:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '40 16 * * *' || (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'reminder')
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Telegram Bot (Reminder)
+        run: python telegram/bot.py reminder

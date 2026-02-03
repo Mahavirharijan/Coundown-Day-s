@@ -31,10 +31,9 @@ def send_msg(msg):
     })
 
 for day in config["days"]:
-    if day["date"] == today and day["autoUnlock"]:
-
+    if day["date"] == today:
         # 🔓 MAIN UNLOCK MESSAGE
-        if mode == "unlock":
+        if mode == "unlock" and day["autoUnlock"]:
             msg = (
                 f"<b>{day['title']}</b>\n\n"
                 f"Something special is waiting just for you 💝\n"
@@ -45,13 +44,13 @@ for day in config["days"]:
             send_msg(msg)
             break
 
-    # ⏰ REMINDER MESSAGE
-    if mode == "reminder":
-        msg = (
-            f"⏰ Reminder!\n\n"
-            f"Today's card <b>{day['title']}</b> is waiting 💕\n"
-            f"Open it now 👇\n\n"
-            f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/"
-        )
-        send_msg(msg)
-        break
+        # ⏰ REMINDER MESSAGE
+        elif mode == "reminder":
+            msg = (
+                f"⏰ Reminder!\n\n"
+                f"Today's card <b>{day['title']}</b> is waiting 💕\n"
+                f"Open it now 👇\n\n"
+                f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/"
+            )
+            send_msg(msg)
+            break
