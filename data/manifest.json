@@ -2,18 +2,18 @@
   "name": "Love Countdown 💖",
   "short_name": "Love 💕",
   "description": "Every day unlocks a new feeling",
-  "start_url": "/index.html",
+  "start_url": "/Coundown-Day-s/index.html",
   "display": "standalone",
   "background_color": "#ffd6e8",
   "theme_color": "#ff2f92",
   "icons": [
     {
-      "src": "assets/images/icon-192.png",
+      "src": "/Coundown-Day-s/assets/images/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "assets/images/icon-512.png",
+      "src": "/Coundown-Day-s/assets/images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
