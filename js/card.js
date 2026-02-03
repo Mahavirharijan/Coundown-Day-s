@@ -18,14 +18,26 @@ function openCard(day) {
         </video></br>
 
         <button id="closeBtn">Close ❤️</button>
+        <button id="playPauseBtn">Pause Music ⏸️</button>
     
     `;
-
 
   container.appendChild(cardDiv);
 
   const audio = new Audio(day.music);
+  let isPlaying = true;
   audio.play();
+
+  document.getElementById("playPauseBtn").onclick = () => {
+    if (isPlaying) {
+      audio.pause();
+      document.getElementById("playPauseBtn").textContent = "Play Music ▶️";
+    } else {
+      audio.play();
+      document.getElementById("playPauseBtn").textContent = "Pause Music ⏸️";
+    }
+    isPlaying = !isPlaying;
+  };
 
   document.getElementById("closeBtn").onclick = () => {
     audio.pause();
