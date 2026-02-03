@@ -46,8 +46,10 @@ h6 {
   font-size: 20px;
 }
 h2{
-    color: rgb(194, 70, 132);
+    color: rgb(214, 19, 116);
     font-family: "Times New Roman", Times, serif;
+    -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black;
     font-size: 35px;
     margin-top: 220px;
 }
