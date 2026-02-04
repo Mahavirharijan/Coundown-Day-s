@@ -16,8 +16,8 @@ chat_id2 = config["telegram"]["chatId2"]
 now_utc = datetime.utcnow()
 now_ist = now_utc + timedelta(hours=5, minutes=30)
 today = now_ist.strftime("%Y-%m-%d")
-current_time = now_ist.time()
-reminder_time = time(*map(int, config["reminderTime"].split(":")))  # 9:00 AM
+# current_time = now_ist.time()
+# reminder_time = time(*map(int, config["reminderTime"].split(":")))  # 9:00 AM
 
 
 def send_msg(msg):
@@ -49,7 +49,7 @@ for day in config["days"]:
         break
         
         # ⏰ REMINDER MESSAGE
-        if mode == "reminder" or (mode == "unlock" and current_time >= reminder_time):
+        if mode == "reminder" or (mode == "unlock"):
             msg = (
                 f"⏰ Reminder!\n\n"
                 f"I know you're excited for tomorrow's card 😍\n"
