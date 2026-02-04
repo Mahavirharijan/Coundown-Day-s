@@ -16,6 +16,8 @@ chat_id2 = config["telegram"]["chatId2"]
 now_utc = datetime.utcnow()
 now_ist = now_utc + timedelta(hours=5, minutes=30)
 today = now_ist.strftime("%Y-%m-%d")
+current_time = now_ist.time()
+reminder_time = time(*map(int, config["reminderTime"].split(":")))  # 9:00 AM
 
 
 def send_msg(msg):
