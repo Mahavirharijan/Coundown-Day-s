@@ -49,7 +49,7 @@ for day in config["days"]:
         break
         
         # ⏰ REMINDER MESSAGE
-        if mode == "reminder" or (mode == "unlock" and current_time <= reminder_time):
+        if mode == "reminder" or (mode == "unlock" and current_time >= reminder_time):
             msg = (
                 f"⏰ Reminder!\n\n"
                 f"I know you're excited for tomorrow's card 😍\n"
