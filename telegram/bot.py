@@ -45,6 +45,7 @@ for day in config["days"]:
                 f"🔐 Access Code: <b>{config['accessCode']}</b>"
             )
             send_msg(msg)
+        break
 
         # ⏰ REMINDER MESSAGE
         if mode == "reminder" or (mode == "unlock" and current_time >= reminder_time):
