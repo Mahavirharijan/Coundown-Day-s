@@ -39,20 +39,22 @@ for day in config["days"]:
         if mode == "unlock" and day["autoUnlock"]:
             msg = (
                 f"<b>{day['title']}</b>\n\n"
-                f"Something special is waiting just for you 💝\n"
-                f"Your Unlock Card is ready, only for my queen 👑\n\n"
+                f"Something truly special is waiting just for you 💝\n"
+                f"Your unlock card is ready — made only for my queen 👑✨\n\n"
+                f"Tap here to open it 👇\n"
                 f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/\n"
                 f"🔐 Access Code: <b>{config['accessCode']}</b>"
             )
             send_msg(msg)
         break
-
+        
         # ⏰ REMINDER MESSAGE
         if mode == "reminder" or (mode == "unlock" and current_time >= reminder_time):
             msg = (
                 f"⏰ Reminder!\n\n"
-                f"Today's card <b>{day['title']}</b> is waiting 💕\n"
-                f"Open it now 👇\n\n"
+                f"I know you're excited for tomorrow's card 😍\n"
+                f"Just wait a little… the card will open at <b>12:00 am</b> 🕛\n\n"
+                f"Be ready 👇\n\n"
                 f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/"
             )
             send_msg(msg)
