@@ -1,7 +1,7 @@
 import sys
 import json
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, time
 
 mode = sys.argv[1] if len(sys.argv) > 1 else "unlock"
 
@@ -16,6 +16,11 @@ chat_id2 = config["telegram"]["chatId2"]
 now_utc = datetime.utcnow()
 now_ist = now_utc + timedelta(hours=5, minutes=30)
 today = now_ist.strftime("%Y-%m-%d")
+
+# Parse reminder time
+reminder_time_str = config["reminderTime"]
+reminder_time = datetime.strptime(reminder_time_str, "%H:%M").time()
+current_time = now_ist.time()
 
 def send_msg(msg):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
@@ -42,10 +47,9 @@ for day in config["days"]:
                 f"🔐 Access Code: <b>{config['accessCode']}</b>"
             )
             send_msg(msg)
-            break
 
         # ⏰ REMINDER MESSAGE
-        elif mode == "reminder":
+        if mode == "reminder" or (mode == "unlock" and current_time >= reminder_time):
             msg = (
                 f"⏰ Reminder!\n\n"
                 f"Today's card <b>{day['title']}</b> is waiting 💕\n"
@@ -53,4 +57,4 @@ for day in config["days"]:
                 f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/"
             )
             send_msg(msg)
-            break
+        break
