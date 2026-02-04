@@ -35,7 +35,6 @@ def send_msg(msg):
 
 for day in config["days"]:
     if day["date"] == today:
-        # 🔓 MAIN UNLOCK MESSAGE
        # 🔓 UNLOCK MESSAGE
         if mode == "unlock" and day["autoUnlock"]:
             msg = (
