@@ -17,10 +17,6 @@ now_utc = datetime.utcnow()
 now_ist = now_utc + timedelta(hours=5, minutes=30)
 today = now_ist.strftime("%Y-%m-%d")
 
-# Parse reminder time
-reminder_time_str = config["reminderTime"]
-reminder_time = datetime.strptime(reminder_time_str, "%H:%M").time()
-current_time = now_ist.time()
 
 def send_msg(msg):
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
