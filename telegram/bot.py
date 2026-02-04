@@ -45,14 +45,15 @@ for day in config["days"]:
                 f"🔐 Access Code: <b>{config['accessCode']}</b>"
             )
             send_msg(msg)
-        break
+        
 
         # ⏰ REMINDER MESSAGE
         if mode == "reminder" or (mode == "unlock" and current_time >= reminder_time):
             msg = (
                 f"⏰ Reminder!\n\n"
-                f"Today's card <b>{day['title']}</b> is waiting 💕\n"
-                f"Open it now 👇\n\n"
+                f"I know you're excited for tomorrow's card 😍\n"
+                f"Just wait a little… the card will open at <b>12:00 am</b> 🕛\n\n"
+                f"Be ready 👇\n\n"
                 f"🔗 https://mahavirharijan.github.io/Coundown-Day-s/"
             )
             send_msg(msg)
