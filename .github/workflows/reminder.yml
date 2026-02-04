@@ -4,8 +4,8 @@ on:
   schedule:
     # 00:00 IST = 18:30 UTC
     - cron: "30 13 * * *"
-    # 16:24 IST = 10:58 UTC
-    - cron: "58 10 * * *"
+    # 16:50 IST = 11:20 UTC
+    - cron: "20 11 * * *"
   workflow_dispatch:
     inputs:
       mode:

@@ -1,0 +1,14 @@
+{
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/reminder.yml"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./telegram",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
+}
