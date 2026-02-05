@@ -92,7 +92,7 @@ input {
   font-size: 18px;
 }
 
-button {
+/* button {
   margin-top: 30px;
   padding: 8px 20px;
   color: white;
@@ -101,7 +101,7 @@ button {
   background: transparent;
   cursor: pointer;
   font-size: 18px;
-}
+} */
 
 #accessCode{
     font-size: 25px;
@@ -265,8 +265,9 @@ button {
   align-items: center;
 }
 
-#playPauseBtn, #closeBtn {
+#playPauseBtn, #closeBtn{
   padding: 8px 20px;
+  width: 165px;
   color: white;
   border: 4px solid rgb(227, 103, 200);
   background: transparent;
@@ -274,6 +275,7 @@ button {
   cursor: pointer;
   margin: 5px;
   transition: transform 0.2s ease, background-color 0.2s ease;
+
 }
 
 #playPauseBtn:hover, #closeBtn:hover {
