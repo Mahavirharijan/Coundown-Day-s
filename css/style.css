@@ -101,6 +101,7 @@ input {
   background: transparent;
   cursor: pointer;
   font-size: 18px;
+  width: 100px;
 }
 #access-Btn:hover {
   transform: scale(1.05);
