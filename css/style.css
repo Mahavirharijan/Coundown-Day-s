@@ -92,7 +92,7 @@ input {
   font-size: 18px;
 }
 
-/* button {
+#access-Btn {
   margin-top: 30px;
   padding: 8px 20px;
   color: white;
@@ -101,7 +101,10 @@ input {
   background: transparent;
   cursor: pointer;
   font-size: 18px;
-} */
+}
+#access-Btn:hover {
+  transform: scale(1.05);
+}
 
 #accessCode{
     font-size: 25px;
