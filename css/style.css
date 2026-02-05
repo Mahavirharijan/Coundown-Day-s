@@ -143,36 +143,66 @@ button {
   margin-top: 75px;
 }
 
+.romantic-header {
+  padding: 15px 20px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* CENTER */
+.center {
+  flex: 3;
+  text-align: center;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* BUTTON COMMON FIX */
+.notification-btn,
 .install-btn {
   background: #dd0b741b;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
   border: 3px solid rgb(227, 103, 200);
-  text-align: center;
-  padding: 5px 10px;
+  padding: 5px 12px;
   border-radius: 22px;
   font-size: 13px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  display: flex;
-  margin-left: auto;
-  margin-right: 20px;
-  margin-top: auto;
   height: 30px;
-  width: 65px;
-}
-.install-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-top: -42px;
-  margin-bottom: 15px;
-  text-align: justify;
+  margin-bottom: 35px;
 }
 
+.notification-btn{
+  margin-left: 30px;
+}
+
+.install-btn{
+  margin-right: 30px;
+}
+
+.notification-btn:hover,
 .install-btn:hover {
   transform: scale(1.05);
 }
+
 
 .day-card {
   background: linear-gradient(
