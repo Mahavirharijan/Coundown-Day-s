@@ -156,20 +156,20 @@ button {
 
 /* LEFT */
 .left {
-  flex: 1;
+  flex: 0;
   display: flex;
   justify-content: flex-start;
 }
 
 /* CENTER */
 .center {
-  flex: 3;
+  flex: 4;
   text-align: center;
 }
 
 /* RIGHT */
 .right {
-  flex: 1;
+  flex: 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -187,7 +187,7 @@ button {
   cursor: pointer;
   transition: transform 0.2s ease;
   height: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .notification-btn{
