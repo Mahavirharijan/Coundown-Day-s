@@ -44,6 +44,7 @@
       "image": "assets/images/3-chocolate.jpg",
       "music": "assets/music/3-chocolate_day.mp3",
       "video": "assets/video/3-chocolate.mp4",
+      "video1": "assets/video/masti.mp4",
       "autoUnlock": true,
       "manualUnlock": true
     },
