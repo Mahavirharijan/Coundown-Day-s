@@ -16,10 +16,6 @@ function openCard(day) {
           <source src="${day.video}" type="video/mp4">
           Your browser does not support the video tag.
         </video></br>
-        <video width="320" height="240" controls class="card-video">
-          <source src="${day.video1}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video></br>
 
         <button id="closeBtn">Close ❤️</button>
         <button id="playPauseBtn">Pause Music ⏸️</button>
